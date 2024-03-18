@@ -1,0 +1,83 @@
+WEBVTT
+
+00:00:00,000 --> 00:00:07,000
+Hey folks, welcome to Two Minutes Pi.
+
+00:00:07,000 --> 00:00:13,000
+Today, we're unraveling the mystery of Init.pi and Python, a little file that does big things.
+
+00:00:13,000 --> 00:00:15,000
+Let's get straight to it without any tech jargon.
+
+00:00:15,000 --> 00:00:17,000
+What is Init.pi?
+
+00:00:17,000 --> 00:00:22,000
+Let's say you have a directory with a bunch of Python files and you want to treat it as a package.
+
+00:00:22,000 --> 00:00:26,000
+Just drop an Init.pi file inside and boom!
+
+00:00:26,000 --> 00:00:29,000
+Python recognizes that directory as a package.
+
+00:00:29,000 --> 00:00:32,000
+It's like a secret handshake between your code and Python.
+
+00:00:32,000 --> 00:00:35,000
+Now what's inside this? Init.pi file.
+
+00:00:35,000 --> 00:00:41,000
+It can be as simple as an empty file or you can include some initialization code if you have special setup needs.
+
+00:00:41,000 --> 00:00:45,000
+But most of the time, an empty Init.pi is just fine.
+
+00:00:45,000 --> 00:00:50,000
+Think of Init.pi as the packages way of saying, I'm ready to be used.
+
+00:00:50,000 --> 00:00:58,000
+When someone else wants to use your package, they import it in their code and Python knows to look for that magical Init.pi.
+
+00:00:58,000 --> 00:01:08,000
+Without Init.pi, Python wouldn't recognize your directory as a package and you wouldn't be able to import modules from it using the standard import statement.
+
+00:01:08,000 --> 00:01:12,000
+How does Init.pi help in creating packages?
+
+00:01:12,000 --> 00:01:19,000
+Init.pi allows you to organize your code into modular chunks, making it easier to manage and reuse.
+
+00:01:19,000 --> 00:01:22,000
+Think of it as a blueprint for your package.
+
+00:01:22,000 --> 00:01:32,000
+You can define common functions, variables, or even import other modules within Init.pi, setting up the foundation for your package's functionality.
+
+00:01:32,000 --> 00:01:39,000
+Let's create a simple package called My underscore package to illustrate how Init.pi works.
+
+00:01:39,000 --> 00:01:45,000
+Inside the My underscore package directory, create an empty file called Init.pi.
+
+00:01:45,000 --> 00:01:54,000
+Now, create another file called Greetings.pi and write a function called Say underscore hello, that prints Hello world.
+
+00:01:54,000 --> 00:02:04,000
+Now, from any file outside the My underscore package directory, you can import the greetings module and use the Say underscore hello function.
+
+00:02:04,000 --> 00:02:14,000
+This will print Hello world because Init.pi makes the greetings module accessible from within the My underscore package name space.
+
+00:02:15,000 --> 00:02:22,000
+Init.pi is a fundamental building block for creating structured and organized Python packages.
+
+00:02:22,000 --> 00:02:29,000
+It's like the invisible glue that holds your code together, making it easier to manage, reuse, and share.
+
+00:02:29,000 --> 00:02:35,000
+So, in simple terms, Init.pi is like the starting line for your Python project.
+
+00:02:35,000 --> 00:02:39,000
+Thanks for tuning in, that's all for now, and as always, keep coding.
+
